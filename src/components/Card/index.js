@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import './styles.css';
 import Modal from '../Modal';
-
+import Adjuster from '../Adjuster';
 
 class Card extends Component {
     constructor() {
@@ -24,6 +24,12 @@ class Card extends Component {
         <>
             <Modal show={this.state.show} handleClose={this.hideModal}>
                 <p>{this.props.name}</p>
+                <p>{this.props.name}</p>
+                <p>{this.props.name}</p>
+                <p>{this.props.name}</p>
+                <p>{this.props.name}</p>
+                <p>{this.props.name}</p>
+                <Adjuster/>
             </Modal>
             <div className="card" onClick={this.showModal}>
                     <h1>{this.props.name}</h1>
