@@ -1,24 +1,20 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import {
-  BrowserRouter,
-  Routes,
-  Route,
-} from "react-router-dom";
+import React from "react";
+import ReactDOM from "react-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-import './index.css';
-import App from './App';
+import "./index.css";
+import App from "./App";
 import Glinder from "./routes/Glinder";
-import reportWebVitals from './reportWebVitals';
+import reportWebVitals from "./reportWebVitals";
 
 ReactDOM.render(
-  <BrowserRouter>
+  <BrowserRouter basename={process.env.PUBLIC_URL}>
     <Routes>
       <Route path="/" element={<App />} />
       <Route path="glinder" element={<Glinder />} />
     </Routes>
   </BrowserRouter>,
-  document.getElementById('root')
+  document.getElementById("root")
 );
 
 // If you want to start measuring performance in your app, pass a function
