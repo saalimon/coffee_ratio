@@ -1,3 +1,4 @@
+import React from "react";
 import { Link } from "react-router-dom";
 import { ParallaxProvider } from "react-scroll-parallax";
 import Card from "../components/Card";
