@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import "./styles.css";
 import Modal from "../Modal";
-import Adjuster from "../Adjuster";
 
 class Card extends Component {
   constructor() {

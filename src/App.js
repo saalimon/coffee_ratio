@@ -1,5 +1,5 @@
 import "./App.css";
-import { Outlet, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { ParallaxProvider } from "react-scroll-parallax";
 import Card from "./components/Card";
 import moka from "./images/moka-pot.png";
